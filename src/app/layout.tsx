@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'Nufin: Tu Prestamo Sin Buro',
   description: 'Préstamos al instante, sin buró. De $500 a $9,000 MXN directos a tu cuenta.',
+  icons: {
+    icon: '/images/nufinlogo.jpg',
+  },
 };
 
 export default function RootLayout({
