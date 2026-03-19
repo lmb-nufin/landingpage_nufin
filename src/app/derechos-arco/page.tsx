@@ -1,5 +1,5 @@
 
-import { Container } from "@/components/landing/container";
+import { Container } from "@/components/landing/Container";
 
 export default function DerechosArcoPage() {
   return (
