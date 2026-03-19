@@ -54,6 +54,14 @@ export function Footer() {
                      Aviso de Privacidad
                    </Link>
                  </li>
+                 <li>
+                   <Link 
+                    href="/derechos-arco" 
+                    className="hover:text-electric transition-colors text-left"
+                   >
+                     Derechos ARCO
+                   </Link>
+                 </li>
                </ul>
             </div>
           </div>
@@ -70,5 +78,3 @@ export function Footer() {
     </>
   );
 }
-
-    
