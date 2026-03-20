@@ -19,10 +19,8 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isLegalPage = pathname === '/terminos-y-condiciones' || pathname === '/aviso-de-privacidad';
-
   const getHref = (href: string) => {
-    return isLegalPage ? `/${href}` : href;
+    return pathname === '/' ? href : `/${href}`;
   };
 
   return (
