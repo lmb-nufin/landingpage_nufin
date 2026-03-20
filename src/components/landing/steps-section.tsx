@@ -13,21 +13,21 @@ export function StepsSection() {
     },
     {
       id: "02",
-      icon: <IdCard className="w-5 h-5 text-white" />,
-      title: "Identifícate",
-      time: "2m",
-      desc: "INE y selfie. Tecnología biométrica avanzada.",
-      gradient: "from-electric to-violet-500",
-      shadow: "shadow-electric/30"
-    },
-    {
-      id: "03",
       icon: <Zap className="w-5 h-5 text-white" />,
       title: "Aprobación IA",
       time: "30s",
       desc: "Motor de riesgo en tiempo real. Sin papeleo.",
       gradient: "from-fuchsia-500 to-pink-500",
       shadow: "shadow-fuchsia-500/30"
+    },
+    {
+      id: "03",
+      icon: <IdCard className="w-5 h-5 text-white" />,
+      title: "Identifícate",
+      time: "2m",
+      desc: "INE y selfie. Tecnología biométrica avanzada.",
+      gradient: "from-electric to-violet-500",
+      shadow: "shadow-electric/30"
     },
     {
       id: "04",
