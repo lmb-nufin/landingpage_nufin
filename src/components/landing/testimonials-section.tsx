@@ -15,14 +15,14 @@ const testimonials = [
     location: "Monterrey",
     date: "Miembro desde 2023",
     quote: "Lo que más valoro es el respeto. No te acosan con llamadas. Pagué a tiempo y mi límite subió de inmediato. ¡Súper recomendado!",
-    avatar: "https://i.pravatar.cc/150?u=rick"
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     name: "Elena Gómez",
     location: "Guadalajara",
     date: "Miembro desde 2021",
     quote: "La app es muy intuitiva. Pedí el préstamo para una emergencia médica un domingo a las 11 PM y el SPEI cayó al instante.",
-    avatar: "https://i.pravatar.cc/150?u=elena"
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
   },
   {
     name: "Marco Antonio",
