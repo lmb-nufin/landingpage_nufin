@@ -8,7 +8,7 @@ const testimonials = [
     location: "CDMX",
     date: "Miembro desde 2022",
     quote: "Increíble. No tenía historial crediticio y Nufin fue la única que confió en mí. El depósito llegó en 5 minutos literally.",
-    avatar: "https://i.pravatar.cc/150?u=ale"
+    avatar: "https://randomuser.me/api/portraits/women/68.jpg"
   },
   {
     name: "Ricardo Salinas",
