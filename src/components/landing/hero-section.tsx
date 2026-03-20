@@ -7,11 +7,6 @@ import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 
 export function HeroSection() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   return (
     <section id="inicio" className="relative pt-20 bg-white overflow-hidden">
@@ -20,8 +15,7 @@ export function HeroSection() {
           
           <div className={cn(
             "lg:col-span-1 text-center lg:text-left space-y-2 self-center",
-            "transition-opacity",
-             isClient ? "animate-fade-in" : "opacity-0"
+            "animate-fade-in"
           )}>
             <h1 className="text-3xl md:text-5xl font-display font-black text-gray-900 leading-[1.1]">
               Préstamos<br/>inmediatos,<br/><span className="text-deeppurple">sin historial</span>
@@ -38,8 +32,7 @@ export function HeroSection() {
 
           <div className={cn(
             "lg:col-span-2 relative w-full flex flex-col items-center lg:items-end",
-            "transition-opacity",
-             isClient ? "animate-fade-in" : "opacity-0"
+            "animate-fade-in"
           )}>
             <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl">
               <Image 
