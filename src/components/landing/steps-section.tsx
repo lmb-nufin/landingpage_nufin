@@ -127,10 +127,9 @@ export function StepsSection() {
                     </div>
 
                     {/* Stats Grid inside Dark Card for Contrast */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 border-t border-gray-800 pt-8">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10 border-t border-gray-800 pt-8">
                         {[
                             { label: "Reconstruyen su historial", val: "8 de cada 10", icon: <UserCheck size={14} className="text-electric" /> },
-                            { label: "Cifrado Militar", val: "AES-256", icon: <ShieldCheck size={14} className="text-emerald-400" /> },
                             { label: "Experiencia Usuario", val: "4.9/5", icon: <Heart size={14} className="text-rose-500 fill-rose-500" /> },
                             { label: "Atención Real", val: "24/7", icon: <Clock size={14} className="text-blue-400" /> }
                         ].map((metric, i) => (
