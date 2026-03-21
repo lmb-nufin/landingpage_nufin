@@ -5,7 +5,6 @@ export function TrustBar() {
     { name: "STP", role: "Liquidación SPEI" },
     { name: "PROFECO", role: "Protección" },
     { name: "Hacienda", role: "SAT / SHCP" },
-    { name: "CONDUSEF", role: "Supervisión" },
     { name: "BBVA", role: "Infraestructura" },
     { name: "Google", role: "Cloud & Safety" },
     { name: "Amazon", role: "Web Services" }
@@ -110,7 +109,7 @@ export function TrustBar() {
                     </div>
                     </div>
 
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                     {partners.map((partner, index) => (
                         <div key={index} className="flex flex-col items-center justify-center p-4 bg-white/40 border border-white/80 rounded-2xl transition-all hover:bg-white hover:shadow-md group">
                         <div className="text-base font-display font-black text-slate-400 group-hover:text-electric transition-colors mb-1 tracking-tighter text-center">

@@ -69,7 +69,7 @@ export function Footer() {
           <div className="pt-8 border-t border-gray-200">
              <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                <p className="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest font-black text-center md:text-left">
-                 &copy; 2024 Nufin México. Entidad Financiera bajo supervisión.
+                 &copy; 2024 Nufin México. Financiera bajo supervisión.
                </p>
              </div>
           </div>
