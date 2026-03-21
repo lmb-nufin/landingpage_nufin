@@ -94,11 +94,11 @@ export default function TermsAndConditionsPage() {
                 NUFIN se reserva el derecho de solicitar documentación adicional con el fin de corroborar los datos ingresados en la solicitud, así como de suspender temporal o definitivamente las cuentas y/o negar las solicitudes de aquellos usuarios cuyos datos no hayan podido ser confirmados, sean detectados como alterados o falsificados.
               </p>
               <p>
-                Asimismo, el Usuario autoriza a NUFIN para que una vez que cuente con toda la información y datos personales requeridos, realice la consulta de su historial crediticio por conducto de su socio comercial SIEMPRE CRECIENDO S.A. DE C.V. SOFOM ENR en las sociedades de información crediticia con las que tenga celebrado contrato, y la procese bajo el modelo de calificación de crédito de NUFIN, con lo cual se determinará si se aprueba o niegan los servicios al Usuario.
+                Asimismo, el Usuario autoriza a NUFIN para que una vez que cuente con toda la información y datos personales requeridos, realice la consulta de su historial crediticio por conducto de Nufin Mexico, SAPI de CV en las sociedades de información crediticia con las que tenga celebrado contrato, y la procese bajo el modelo de calificación de crédito de NUFIN, con lo cual se determinará si se aprueba o niegan los servicios al Usuario.
               </p>
               <h3 className="text-xl font-semibold mt-6 mb-3">5.2. Aprobación o Negación de la Solicitud de Crédito.</h3>
               <p>
-                El usuario acepta, reconoce y autoriza a SIEMPRE CRECIENDO S.A. DE C.V. SOFOM ENR a fin de que este haga la consulta ante Circulo de crédito de su historial crediticio y esta sea entregada a su socio comercial Nufin México SAPI de CV como complemento de su solicitud de crédito.
+                El usuario acepta, reconoce y autoriza a Nufin Mexico, SAPI de CV a fin de que este haga la consulta ante Circulo de crédito de su historial crediticio y esta sea utilizada como complemento de su solicitud de crédito.
               </p>
               <h3 className="text-xl font-semibold mt-6 mb-3">5.3 Aprobación o negación de la solicitud de crédito.</h3>
               <p>
