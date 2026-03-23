@@ -60,11 +60,7 @@ export function MissionSection() {
               <p className="text-gray-500 font-medium text-xs leading-relaxed mb-3">
                 Cobranza ética y respetuosa. Tu privacidad es sagrada.
               </p>
-              <div className="mt-auto">
-                <a href="#" className="inline-flex items-center gap-2 text-[10px] font-bold text-gray-900 hover:text-electric transition-colors uppercase tracking-widest">
-                  Saber más <ArrowUpRight size={10} />
-                </a>
-              </div>
+
             </div>
           </div>
 
@@ -80,11 +76,7 @@ export function MissionSection() {
               <p className="text-gray-500 font-medium text-xs leading-relaxed mb-3">
                 Gana efectivo y mejora tus tasas pagando a tiempo.
               </p>
-              <div className="mt-auto">
-                <a href="#" className="inline-flex items-center gap-2 text-[10px] font-bold text-gray-900 hover:text-electric transition-colors uppercase tracking-widest">
-                  Ver programa <ArrowUpRight size={10} />
-                </a>
-              </div>
+
             </div>
           </div>
 
