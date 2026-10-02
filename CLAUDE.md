@@ -38,6 +38,4 @@ Colores siempre vía variables CSS de `src/app/globals.css` / tokens de Tailwind
 - Usar componentes de `src/components/ui` antes de crear nuevos.
 
 ## Pendientes conocidos
-- `src/ai/*` (Genkit + Gemini) es residuo del starter de Firebase Studio; no se usa en ninguna página.
-- `src/components/ui/calendar.tsx` tiene errores de tipos (API vieja de react-day-picker) y no se usa.
-- `<html lang="en">` en `src/app/layout.tsx` debería ser `es-MX`.
+- Ninguno por ahora.
