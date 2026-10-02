@@ -44,6 +44,21 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/modelos/modelos.pdf',
+        destination: 'https://www.samsungknox.com/en/knox-platform/supported-devices',
+        permanent: true,
+      },
+      {
+        source: '/modelos',
+        destination: 'https://www.samsungknox.com/en/knox-platform/supported-devices',
+        permanent: true,
+      },
+      {
+        source: '/modelos.pdf',
+        destination: 'https://www.samsungknox.com/en/knox-platform/supported-devices',
+        permanent: true,
+      },
+      {
         source: '/servicio_cliente.html',
         destination: '/#servicio',
         permanent: true,
