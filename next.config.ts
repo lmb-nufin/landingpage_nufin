@@ -44,6 +44,36 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/modelos_nufin.pdf',
+        destination: 'https://www.samsungknox.com/en/knox-platform/supported-devices',
+        permanent: true,
+      },
+      {
+        source: '/modelos_nufin',
+        destination: 'https://www.samsungknox.com/en/knox-platform/supported-devices',
+        permanent: true,
+      },
+      {
+        source: '/pdf/derechosarco.pdf',
+        destination: '/DerechosArco.html',
+        permanent: true,
+      },
+      {
+        source: '/pdf/derechosarco',
+        destination: '/DerechosArco.html',
+        permanent: true,
+      },
+      {
+        source: '/pdf/DerechosArco.pdf',
+        destination: '/DerechosArco.html',
+        permanent: true,
+      },
+      {
+        source: '/pdf/DerechosArco',
+        destination: '/DerechosArco.html',
+        permanent: true,
+      },
+      {
         source: '/modelos/modelos.pdf',
         destination: 'https://www.samsungknox.com/en/knox-platform/supported-devices',
         permanent: true,
