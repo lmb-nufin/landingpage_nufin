@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          <div className="prose max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-gray max-w-none text-gray-700 space-y-6 md:text-justify md:hyphens-auto">
             <p>
               En virtud de lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de Particulares (“LFPDPPP”), su Reglamento, los Lineamientos del Aviso de Privacidad y las demás Disposiciones aplicables (en adelante denominados conjuntamente como la “Ley”), se emite el presente Aviso de Privacidad en los siguientes términos:
             </p>
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold mt-8 mb-4">3. FINALIDADES A LAS QUE SE SUJETARÁ EL TRATAMIENTO DE DATOS PERSONALES.</h2>
               <p>El tratamiento tiene como finalidades primarias ser usados para:</p>
-              <ol className="list-decimal list-inside space-y-2">
+              <ol className="list-decimal list-outside space-y-2 pl-6">
                   <li>Identificación del solicitante y/o cliente, según sea el caso.</li>
                   <li>Integración del expediente de información de nuestro cliente.</li>
                   <li>Gestión, control, administración y procesamiento de la solicitud de crédito y, en su caso, el otorgamiento de este.</li>
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
                   <li>Análisis de comportamiento crediticio a partir de mensajes SMS financieros, previo consentimiento del Titular.</li>
                   <li>La información recabada relacionada con la lista de contactos es necesaria para realizar un proceso de evaluación de riesgo de crédito y probabilidad de pago (scoring crediticio) en base al perfil del usuario y así poder determinar la capacidad crediticia, lo cual es parte de los criterios para la determinación de NUFIN para aprobar o rechazar el otorgamiento de la solicitud de crédito y dar inicio a la relación jurídica.</li>
                   <li>En función de los permisos que tenga habilitados, Nufin podrá tener acceso a cierto contenido de su dispositivo, con las siguientes finalidades:
-                    <ul className="list-[lower-alpha] list-inside pl-6 space-y-2 mt-2">
+                    <ul className="list-[lower-alpha] list-outside pl-6 space-y-2 mt-2">
                         <li>Lista de contactos: para efectos de prevenir y detectar el fraude con el objeto de minimizar el riesgo crediticio a través de la herramienta de evaluación denominada “scoring crediticio”.</li>
                         <li>Por ningún motivo Nufin usará los datos de la lista de contactos para comunicarse con tus amigos o familiares. Asimismo, Nufin no proporcionará ninguno de tus datos personales a menos que lo indiques expresamente por separado.</li>
                         <li>Ubicación: para dar cumplimiento a las buenas prácticas que imperan en el proceso de otorgamiento de créditos de manera no presencial a través de dispositivos, así como para efectos de integración del perfil inicial del cliente.</li>
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
               </ol>
               
               <p className="mt-4">Las finalidades secundarias (en lo sucesivo, las “Finalidades Secundarias”) que no son necesarias para el mantenimiento y cumplimiento de la relación jurídica entre NUFIN y tú, son las siguientes:</p>
-              <ol className="list-decimal list-inside space-y-2">
+              <ol className="list-decimal list-outside space-y-2 pl-6">
                 <li>Fines mercadotécnicos, publicitarios y/o de prospección comercial.</li>
                 <li>Campañas de recomendaciones.</li>
                 <li>Uso de imágenes y testimonios de clientes y/o usuarios para fines publicitarios y de ofertas comerciales referentes a productos y/o servicios ofrecidos o relacionados con productos y/o servicios contratados.</li>
@@ -125,7 +125,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold mt-8 mb-4">4. OPCIONES Y MEDIOS QUE NUFIN OFRECE A LOS TITULARES DE DATOS PERSONALES PARA LIMITAR EL USO O DIVULGACIÓN DE SUS DATOS PERSONALES.</h2>
               <p>Podrás limitar el tratamiento de tus datos personales de la siguiente forma:</p>
-              <ul className="list-[lower-roman] list-inside space-y-2">
+              <ul className="list-[lower-roman] list-outside space-y-2 pl-6">
                   <li>El uso, siguiendo las instrucciones indicadas en el último párrafo del apartado “FINALIDADES A LAS QUE SE SUJETARÁ EL TRATAMIENTO DE DATOS PERSONALES”.</li>
                   <li>La divulgación, siguiendo las instrucciones indicadas en el apartado “TRANSFERENCIA DE DATOS PERSONALES”.</li>
                   <li>Dirigiendo la solicitud correspondiente al área Legal, para ejercer tus derechos ARCO conforme a los lineamientos establecidos en el apartado “MEDIOS PARA EL EJERCICIO DE DERECHOS ARCO DEL TITULAR; o</li>
@@ -148,7 +148,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-bold mt-8 mb-4">6. MEDIOS PARA EL EJERCICIO DE DERECHOS ARCO DEL TITULAR.</h2>
               <p>Con el objeto de proteger los datos personales, la privacidad y confianza de nuestros clientes y usuarios, ponemos a tu disposición el correo de soporte@nufin.com.mx, en donde como titular, en cualquier momento puedes limitar el uso o divulgación de tus datos personales, así como negar o revocar la autorización para su tratamiento, mediante el ejercicio de los derechos de acceso, rectificación, cancelación u oposición que la Ley prevé.</p>
               <p>Podrás dirigir tu solicitud a través de:</p>
-              <ul className="list-[lower-alpha] list-inside space-y-2">
+              <ul className="list-[lower-alpha] list-outside space-y-2 pl-6">
                 <li>El correo electrónico soporte@nufin.com.mx, cumpliendo con todos los requisitos señalados en la solicitud de Derechos ARCO disponible a través del Aviso de Privacidad que se puede obtener a través página web de NUFIN www.nufin.com.mx o iniciando sesión en la Aplicación de NUFIN .</li>
                 <li>Mediante escrito dirigido a nuestro equipo Legal, con domicilio en General Mariano Escobedo No. 550, Piso 4 ala “B”, Col. Anzures, Alcaldía Miguel Hidalgo CP. 11590, Ciudad de México, acompañado del formato disponible conforme a lo establecido en el punto a) anterior y copia de tu identificación oficial.</li>
                 <li>Disponible a través del Aviso de Privacidad que se puede descargar a través de la Aplicación NUFIN</li>
@@ -163,7 +163,7 @@ export default function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold mt-8 mb-4">7. TRANSFERENCIA DE DATOS PERSONALES.</h2>
               <p>NUFIN podrá realizar la transferencia y/o remisión de datos a:</p>
-              <ul className="list-[lower-roman] list-inside space-y-2">
+              <ul className="list-[lower-roman] list-outside space-y-2 pl-6">
                   <li>Sociedades controladoras, subsidiarias o afiliadas a NUFIN o a una sociedad matriz para resguardo, control, análisis estadístico, evaluación, mejora y diseño de nuevos productos.</li>
                   <li>Terceros no afiliados (prestadores de servicios) para asistencia en la ejecución de los servicios relacionados con tu crédito.</li>
                   <li>Autoridades administrativas, judiciales o gubernamentales, así́ como a Sociedades de Información Crediticia para cumplir los mandatos judiciales o administrativos o cuando una ley lo determine.</li>
