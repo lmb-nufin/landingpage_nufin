@@ -123,7 +123,7 @@ export default function TermsAndConditionsPage() {
 
             <div>
                 <h2 className="text-2xl font-bold mt-8 mb-4">8. Condiciones Generales de los Servicios.</h2>
-                <p>NUFIN ofrece a través de la Aplicación y su Página Web productos y servicios de otorgamiento de crédito dentro de la República Mexicana, cuyos términos y condiciones particulares se detallan en un Contrato de Crédito, el cual se encuentra debidamente registrado ante la Procuraduría General de Consumidor (PROFECO).</p>
+                <p>NUFIN ofrece a través de la Aplicación y su Página Web productos y servicios de otorgamiento de crédito dentro de la República Mexicana, cuyos términos y condiciones particulares se detallan en un Contrato de Crédito, el cual se encuentra debidamente registrado ante la Procuraduría Federal del Consumidor (PROFECO).</p>
                 <p>Sin perjuicio de las condiciones particulares aplicables a cada usuario, derivadas de los resultados del análisis del riesgo que se realice al usuario, mismas que se detallarán en el Contrato que lleguen a celebrar el usuario y NUFIN por medios electrónicos; NUFIN, hace de su conocimiento las condiciones generales aplicables a los servicios:</p>
                 <ol className="list-[lower-alpha] list-outside space-y-2 pl-6">
                     <li>La solicitud, contratación y prestación de servicios financieros de NUFIN se realiza exclusivamente por medios electrónicos de conformidad con la legislación aplicable y vigente.</li>
