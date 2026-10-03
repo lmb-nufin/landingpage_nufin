@@ -46,9 +46,9 @@ Riesgos regulatorios y de publicidad documentados para revisión. No cambiar est
 - **Testimonios sin verificar**: `src/components/landing/testimonials-section.tsx`. No está confirmado que sean clientes reales; uno va firmado "Ricardo Salinas". Riesgo PROFECO (publicidad engañosa).
 - **Logos institucionales**: `src/components/landing/trust-bar.tsx` muestra PROFECO, Hacienda (SAT / SHCP) y BBVA, lo que sugiere respaldo institucional.
 - **Claim de buró**: "8 de cada 10 reconstruyen su historial" en `src/components/landing/steps-section.tsx`. Requiere que Nufin reporte a buró de crédito.
-- **Aviso de privacidad** (`src/app/aviso-de-privacidad/page.tsx`, actualizado el 1 de agosto de 2024): uso de la lista de contactos y referencias previas a la LFPDPPP de 2025. Requiere revisión legal; no modificar sin instrucción.
-- **Términos y condiciones** (`src/app/terminos-y-condiciones/page.tsx`, sección de productos y servicios): dice que el Contrato de Crédito está registrado en el RECA de CONDUSEF. Contradice que Nufin no está registrada ante CONDUSEF. Requiere revisión legal; no modificar sin instrucción.
+- **Aviso de privacidad** (`src/app/aviso-de-privacidad/page.tsx`): alineado con `AVISO_DE_PRIVACIDAD_OCT-26_VIGENTE.docx` (octubre 2026). La finalidad "Análisis de comportamiento crediticio a partir de mensajes SMS financieros" está en la página pero no en el Word; legal debe agregarla al Word. No modificar sin instrucción.
 
 ### Resueltos
+- Términos y condiciones, sección 8: decía que el Contrato de Crédito estaba registrado en el RECA de CONDUSEF; ahora dice que está registrado ante PROFECO (texto dado por Nufin).
 - Footer (`src/components/landing/footer.tsx`) decía "Financiera bajo supervisión"; ahora solo muestra la razón social "Nufin México, S.A.P.I. de C.V.".
 - Se borró `src/components/landing/partners-section.tsx` (no se usaba y traía logo de CONDUSEF).
