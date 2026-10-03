@@ -1,12 +1,14 @@
 # Landing page Nufin
 
-Landing pública de Nufin (préstamos de $500 a $9,000 MXN sin buró, con el celular Samsung como garantía vía Knox). Sitio estático en Next.js, desplegado en Firebase App Hosting.
+Landing pública de Nufin (préstamos de $500 a $9,000 MXN sin buró, con el celular Samsung como garantía vía Knox). Sitio estático en Next.js, desplegado en Vercel (deploy automático desde GitHub).
 
 ## Stack
 - Next.js 15 (App Router, Turbopack en dev), React 19, TypeScript
 - Tailwind 3 + shadcn/ui (`src/components/ui`, estilo `default`, iconos `lucide-react`)
 - Node 20 (ver `.idx/dev.nix`)
-- Deploy: Firebase App Hosting (`apphosting.yaml`, `maxInstances: 1`)
+- Deploy: Vercel, conectado a `github.com/lmb-nufin/landingpage_nufin`.
+  - Push a `main` = deploy a producción (sitio en vivo).
+  - Push a cualquier otra rama = deploy de preview con URL propia; usarlo para revisar antes de mergear a `main`.
 
 ## Comandos
 - `npm run dev` — servidor local
