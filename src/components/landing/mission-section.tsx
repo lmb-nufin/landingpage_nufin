@@ -30,7 +30,7 @@ export function MissionSection() {
                 Libertad Financiera
               </h3>
               <p className="text-sm lg:text-base text-gray-600 leading-relaxed font-medium mb-6">
-                Te prestamos sin revisar buró ni historial. Nuestra tecnología evalúa tu potencial, no tu pasado.
+                Te prestamos sin importar tu buró ni historial. Nuestra tecnología evalúa tu potencial, no tu pasado.
               </p>
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
