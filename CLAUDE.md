@@ -40,4 +40,9 @@ Colores siempre vía variables CSS de `src/app/globals.css` / tokens de Tailwind
 - Usar componentes de `src/components/ui` antes de crear nuevos.
 
 ## Pendientes conocidos
-- Ninguno por ahora.
+Riesgos regulatorios y de publicidad documentados para revisión. No cambiar estos textos sin instrucción explícita.
+
+- **Testimonios sin verificar**: `src/components/landing/testimonials-section.tsx`. No está confirmado que sean clientes reales; uno va firmado "Ricardo Salinas". Riesgo PROFECO (publicidad engañosa).
+- **Logos institucionales**: `src/components/landing/trust-bar.tsx` muestra PROFECO, Hacienda (SAT / SHCP) y BBVA, lo que sugiere respaldo institucional.
+- **Claim de buró**: "8 de cada 10 reconstruyen su historial" en `src/components/landing/steps-section.tsx`. Requiere que Nufin reporte a buró de crédito.
+- **Aviso de privacidad** (`src/app/aviso-de-privacidad/page.tsx`, actualizado el 1 de agosto de 2024): uso de la lista de contactos y referencias previas a la LFPDPPP de 2025. Requiere revisión legal; no modificar sin instrucción.
