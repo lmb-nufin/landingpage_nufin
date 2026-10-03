@@ -35,6 +35,7 @@ Colores siempre vía variables CSS de `src/app/globals.css` / tokens de Tailwind
 - Todo el copy es en español de México. Montos en MXN con formato `$9,000`.
 - Textos legales (aviso de privacidad, términos, ARCO) y montos/condiciones del crédito: no modificarlos sin instrucción explícita; son contenido regulatorio.
 - Razón social en textos legales: Nufin México, S.A.P.I. de C.V.
+- Nunca afirmar supervisión, autorización o respaldo de CONDUSEF, CNBV, PROFECO, SHCP ni bancos (ni en copy, ni con logos). Nufin no está registrada ni supervisada por CONDUSEF.
 - No romper redirects existentes: hay links impresos y en la app que apuntan a URLs viejas.
 - El repo es público: nunca commitear llaves ni datos de clientes.
 - Usar componentes de `src/components/ui` antes de crear nuevos.
@@ -46,3 +47,8 @@ Riesgos regulatorios y de publicidad documentados para revisión. No cambiar est
 - **Logos institucionales**: `src/components/landing/trust-bar.tsx` muestra PROFECO, Hacienda (SAT / SHCP) y BBVA, lo que sugiere respaldo institucional.
 - **Claim de buró**: "8 de cada 10 reconstruyen su historial" en `src/components/landing/steps-section.tsx`. Requiere que Nufin reporte a buró de crédito.
 - **Aviso de privacidad** (`src/app/aviso-de-privacidad/page.tsx`, actualizado el 1 de agosto de 2024): uso de la lista de contactos y referencias previas a la LFPDPPP de 2025. Requiere revisión legal; no modificar sin instrucción.
+- **Términos y condiciones** (`src/app/terminos-y-condiciones/page.tsx`, sección de productos y servicios): dice que el Contrato de Crédito está registrado en el RECA de CONDUSEF. Contradice que Nufin no está registrada ante CONDUSEF. Requiere revisión legal; no modificar sin instrucción.
+
+### Resueltos
+- Footer (`src/components/landing/footer.tsx`) decía "Financiera bajo supervisión"; ahora solo muestra la razón social "Nufin México, S.A.P.I. de C.V.".
+- Se borró `src/components/landing/partners-section.tsx` (no se usaba y traía logo de CONDUSEF).
