@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
               Aviso de Privacidad
             </h1>
             <p className="text-gray-500 font-medium">
-              Última actualización: 1 de Agosto de 2024
+              Última actualización: Octubre de 2026
             </p>
           </div>
 
@@ -62,13 +62,14 @@ export default function PrivacyPolicyPage() {
 
               <h3 className="text-xl font-semibold mt-6 mb-3">2.7 Perfil Adicional Relacionado al Uso de la APP:</h3>
               <p>Dirección IP, hardware utilizado, software utilizado.</p>
-              
-              <h3 className="text-xl font-semibold mt-6 mb-3">2.8 Información de mensajes SMS.</h3>
-              <p>Con el consentimiento explícito del Titular, NUFIN podrá acceder a los mensajes SMS almacenados en su dispositivo exclusivamente para identificar mensajes relacionados con préstamos personales, como notificaciones de pago vencido, confirmaciones de pago y avisos de desembolso, enviados por entidades financieras.</p>
-              <p>Esta información será utilizada únicamente para evaluar el perfil de riesgo y el comportamiento de pago del usuario como parte del análisis crediticio. NUFIN no accederá, almacenará ni utilizará mensajes personales, de carácter privado o no relacionados con fines financieros. El Titular podrá revocar en cualquier momento su consentimiento directamente desde la aplicación.</p>
               <p>Estos datos podrán ser utilizados, entre otros fines, para evaluar los riesgos inherentes al crédito que solicites, verificar tu identidad, evaluar y calificar tu capacidad crediticia, para fines estadísticos y para cumplir con las Disposiciones de Carácter General aplicables en materia de prevención de lavado de dinero y financiamiento al terrorismo.</p>
               <p>NUFIN no recaba directamente datos personales de menores de edad a través de formularios en la aplicación, cuestionarios, ni a través de su página web, Asimismo, te informamos que NUFIN no recaba datos sensibles para su tratamiento.</p>
               <p>Se hace de tu conocimiento que NUFIN no trabaja con agentes, comisionistas, ni ninguna otra figura similar, por lo que cualquier dato que proporciones a cualquier tercero que se haga pasar como tal, no se encontrará bajo la responsabilidad de NUFIN y, por lo tanto, tú como Titular de los datos, serás el único responsable de la información y datos personales que compartas y el tratamiento que se les dé bajo dichos supuestos.</p>
+
+              <h3 className="text-xl font-semibold mt-6 mb-3">2.8 Información de mensajes SMS.</h3>
+              <p>Con el consentimiento explícito del Titular, NUFIN podrá acceder a los mensajes SMS almacenados en su dispositivo exclusivamente para identificar mensajes relacionados con préstamos personales, como notificaciones de pago vencido, confirmaciones de pago y avisos de desembolso, enviados por entidades financieras.</p>
+              <p>Esta información será utilizada únicamente para evaluar el perfil de riesgo y el comportamiento de pago del usuario como parte del análisis crediticio. NUFIN no accederá, almacenará ni utilizará mensajes personales, de carácter privado o no relacionados con fines financieros. El Titular podrá revocar en cualquier momento su consentimiento directamente desde la aplicación.</p>
+              <p>Estos datos podrán ser utilizados, entre otros fines, para evaluar los riesgos inherentes al crédito que solicites, verificar tu identidad, evaluar y calificar tu capacidad crediticia y para fines estadísticos.</p>
             </div>
 
             <div>
@@ -149,7 +150,7 @@ export default function PrivacyPolicyPage() {
               <p>Con el objeto de proteger los datos personales, la privacidad y confianza de nuestros clientes y usuarios, ponemos a tu disposición el correo de soporte@nufin.com.mx, en donde como titular, en cualquier momento puedes limitar el uso o divulgación de tus datos personales, así como negar o revocar la autorización para su tratamiento, mediante el ejercicio de los derechos de acceso, rectificación, cancelación u oposición que la Ley prevé.</p>
               <p>Podrás dirigir tu solicitud a través de:</p>
               <ul className="list-[lower-alpha] list-outside space-y-2 pl-6">
-                <li>El correo electrónico soporte@nufin.com.mx, cumpliendo con todos los requisitos señalados en la solicitud de Derechos ARCO disponible a través del Aviso de Privacidad que se puede obtener a través página web de NUFIN www.nufin.com.mx o iniciando sesión en la Aplicación de NUFIN .</li>
+                <li>El correo electrónico soporte@nufin.com.mx, cumpliendo con todos los requisitos señalados en la solicitud de Derechos ARCO disponible a través del Aviso de Privacidad que se puede obtener a través página web de NUFIN www.nufin.com.mx o iniciando sesión en la Aplicación de NUFIN.</li>
                 <li>Mediante escrito dirigido a nuestro equipo Legal, con domicilio en General Mariano Escobedo No. 550, Piso 4 ala “B”, Col. Anzures, Alcaldía Miguel Hidalgo CP. 11590, Ciudad de México, acompañado del formato disponible conforme a lo establecido en el punto a) anterior y copia de tu identificación oficial.</li>
                 <li>Disponible a través del Aviso de Privacidad que se puede descargar a través de la Aplicación NUFIN</li>
               </ul>
@@ -184,7 +185,7 @@ export default function PrivacyPolicyPage() {
                   </Label>
               </div>
               <p>Recuerda que puedes solicitar la revocación de tu consentimiento en cualquier momento ingresando nuevamente a este aviso de privacidad y seleccionando la casilla anterior en caso de que nos lo hayas otorgado previamente. Dicha solicitud aplica desde el momento que selecciones la casilla. Para que tu revocación sea guardada correctamente, deberás iniciar sesión en la aplicación de NUFIN y seguir el procedimiento descrito previamente. La negativa respecto a la transferencia de tus datos personales para estas finalidades no será motivo para negarte el servicio.</p>
-              <p>Asimismo, hacemos de tu consentimiento que podremos transferir tus datos sin necesidad de tu autorización previa en cualquiera de los supuestos considerado en el artículo 37 de la LFPDPPP</p>
+              <p>Asimismo, hacemos de tu conocimiento que podremos transferir tus datos sin necesidad de tu autorización previa en cualquiera de los supuestos considerado en el artículo 37 de la LFPDPPP</p>
             </div>
 
             <div>
