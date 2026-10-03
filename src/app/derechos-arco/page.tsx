@@ -126,13 +126,15 @@ export default function DerechosArcoPage() {
               </p>
             </div>
 
-            <div className="pt-4 border-t border-gray-100">
+            <div className="pt-4 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center gap-3">
               <p className="text-sm text-gray-500">
-                Puedes consultar nuestro Aviso de Privacidad en{" "}
-                <Link href="/aviso_privacidad.html" className="text-electric underline font-semibold">
-                  https://nufin.com.mx/aviso_privacidad.html
-                </Link>
+                Puedes consultar nuestro Aviso de Privacidad.
               </p>
+              <Button variant="outline" size="sm" asChild>
+                <Link href="/aviso-de-privacidad">
+                  <FileText /> Ver Aviso de Privacidad
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
