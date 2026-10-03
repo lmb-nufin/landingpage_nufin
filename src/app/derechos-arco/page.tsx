@@ -22,7 +22,7 @@ export default function DerechosArcoPage() {
             </p>
           </div>
 
-          <div className="prose max-w-none text-gray-700 space-y-8 leading-relaxed">
+          <div className="max-w-none text-gray-700 space-y-8 leading-relaxed">
             <div className="bg-gray-50 border-l-4 border-electric p-6 rounded-r-xl space-y-3">
               <p className="font-medium text-gray-900 text-base md:text-lg">
                 Toda persona tiene derecho a la salvaguarda de su información personal y además, al acceso, rectificación, cancelación u oposición (ARCO) de los mismos, en los términos que fije la ley.
