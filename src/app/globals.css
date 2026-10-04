@@ -72,3 +72,26 @@
     @apply bg-electric text-white;
   }
 }
+
+/* ------------------------------------------------------------------
+   Motion (feat/motion-lite) — ver src/components/landing/motion/
+   Evita el destello del titular del hero antes de que GSAP tome control.
+   Failsafe: si el JS no corre en 2.5 s, el contenido aparece igual.
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  html.motion-on:not(.motion-done) [data-motion="hero-title"],
+  html.motion-on:not(.motion-done) [data-motion="hero-fade"] > * {
+    opacity: 0;
+    animation: motion-failsafe 0s linear 2.5s forwards;
+  }
+}
+@keyframes motion-failsafe {
+  to {
+    opacity: 1;
+  }
+}
+/* Líneas generadas por SplitText: holgura para descendentes dentro de la máscara */
+.motion-line {
+  padding-bottom: 0.06em;
+  margin-bottom: -0.06em;
+}

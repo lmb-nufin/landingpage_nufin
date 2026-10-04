@@ -55,7 +55,7 @@ export function StepsSection() {
                         <span className="w-2 h-2 rounded-full bg-electric animate-pulse"></span>
                         <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Proceso Digital 100%</span>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tighter leading-[1.1]">
+                    <h3 data-motion="reveal-title" className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tighter leading-[1.1]">
                         Dinero en tu cuenta <br/>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-violet-600">a la velocidad de la luz</span>
                     </h3>
@@ -102,6 +102,8 @@ export function StepsSection() {
                     {/* Background Gradients */}
                     <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-electric/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
                     <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
+                    {/* Motion: capa de color que sube con el scroll (negro → morado). Abajo se desvanece para no bajar el contraste de las métricas. */}
+                    <div data-motion="cta-tint" aria-hidden="true" className="absolute inset-0 opacity-0 pointer-events-none bg-gradient-to-b from-deeppurple via-deeppurple/60 to-transparent"></div>
 
                     <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="text-center md:text-left space-y-1">
@@ -112,7 +114,7 @@ export function StepsSection() {
                                 </span>
                                 <span className="text-emerald-400 font-bold text-xs tracking-widest uppercase">Sistema Activo</span>
                             </div>
-                            <h4 className="text-3xl font-display font-black text-white tracking-tight">
+                            <h4 data-motion="reveal-title" className="text-3xl font-display font-black text-white tracking-tight">
                                 Comienza tu solicitud
                             </h4>
                             <p className="text-gray-400 text-base font-medium">Toma menos de 3 minutos.</p>

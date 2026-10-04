@@ -16,7 +16,7 @@ export function CustomerServiceSection() {
             <Headset size={14} className="text-electric" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-electric">Soporte Real</span>
         </div>
-        <h2 className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tighter leading-tight mb-6">
+        <h2 data-motion="reveal-title" className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tighter leading-tight mb-6">
           ¿Necesitas <span className="text-deeppurple">Ayuda</span>?
         </h2>
         <p className="text-sm text-gray-500 font-medium max-w-2xl mx-auto mb-12">

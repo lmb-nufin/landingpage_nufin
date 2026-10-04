@@ -5,6 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
+import { MOTION_ENABLED } from "./motion/config";
 
 export function HeroSection() {
 
@@ -15,11 +16,12 @@ export function HeroSection() {
 
           <div className={cn(
             "lg:col-span-1 text-center lg:text-left space-y-2 self-center",
-            "animate-fade-in"
+            !MOTION_ENABLED && "animate-fade-in"
           )}>
-            <h1 className="text-3xl md:text-5xl font-display font-black text-gray-900 leading-[1.1]">
+            <h1 data-motion="hero-title" className="text-3xl md:text-5xl font-display font-black text-gray-900 leading-[1.1]">
               Préstamos<br />inmediatos,<br /><span className="text-deeppurple">sin historial</span>
             </h1>
+            <div data-motion="hero-fade" className="space-y-2">
             <p className="text-sm text-gray-600 font-medium max-w-md mx-auto lg:mx-0 pb-2">
               De <span className="font-bold text-gray-900">$500</span> a <span className="font-bold text-gray-900">$9,000 MXN</span> directos a tu cuenta desde tu celular.
             </p>
@@ -28,6 +30,7 @@ export function HeroSection() {
                 Obtén el tuyo ahora
               </a>
             </Button>
+            </div>
           </div>
 
           <div className={cn(
@@ -35,6 +38,7 @@ export function HeroSection() {
             "animate-fade-in"
           )}>
             <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-xl">
+              <div data-motion="hero-media" className="absolute inset-0 will-change-transform">
               <Image
                 src="/images/hero.png"
                 alt="Mujer feliz usando la app de Nufin"
@@ -43,6 +47,7 @@ export function HeroSection() {
                 unoptimized={true}
                 className="object-cover object-center"
               />
+              </div>
               <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-white/90 backdrop-blur-sm py-2 px-4 rounded-full shadow-lg flex items-center gap-2 z-20 animate-float">
                 <CheckCircle2 size={16} className="text-emerald-500" />
                 <span className="text-xs font-bold text-gray-800">Tu préstamo fue aprobado</span>

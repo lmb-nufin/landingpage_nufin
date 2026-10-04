@@ -11,7 +11,7 @@ export function MissionSection() {
               <Sparkles size={12} className="text-emerald-500" />
               <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Filosofía Nufin</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 tracking-tight">
+            <h2 data-motion="reveal-title" className="text-3xl md:text-4xl font-display font-bold text-gray-900 tracking-tight">
               Más que crédito, <span className="text-deeppurple">bienestar</span> financiero.
             </h2>
           </div>
