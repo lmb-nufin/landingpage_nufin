@@ -36,6 +36,8 @@ export function LandingMotion() {
       {
         motion: "(prefers-reduced-motion: no-preference)",
         mobile: "(max-width: 767px)",
+        // Siempre verdadera: GSAP solo ejecuta el callback si alguna condición se cumple.
+        always: "all",
       },
       (ctx) => {
         const { motion, mobile } = ctx.conditions as { motion: boolean; mobile: boolean };

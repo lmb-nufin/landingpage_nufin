@@ -1,0 +1,305 @@
+/* Teléfono sticky de "Cómo funciona". Colores solo vía tokens de Tailwind (theme()). */
+
+.phone {
+  --phone-w: clamp(150px, 42vw, 180px);
+  width: var(--phone-w);
+  aspect-ratio: 9 / 19.5;
+  position: relative;
+  flex: 0 0 auto;
+}
+@media (min-width: 768px) {
+  .phone {
+    --phone-w: clamp(240px, 21vw, 300px);
+  }
+}
+.body {
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--phone-w) * 0.14);
+  background: theme('colors.gray.900');
+  padding: calc(var(--phone-w) * 0.032);
+  box-shadow:
+    0 calc(var(--phone-w) * 0.12) calc(var(--phone-w) * 0.22) calc(var(--phone-w) * -0.07) rgb(75 31 147 / 0.45),
+    0 calc(var(--phone-w) * 0.02) calc(var(--phone-w) * 0.05) rgb(17 24 39 / 0.25);
+}
+.screenArea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: calc(var(--phone-w) * 0.115);
+  background: hsl(var(--background));
+  font-size: calc(var(--phone-w) * 0.046);
+  isolation: isolate;
+}
+.camera {
+  position: absolute;
+  top: calc(var(--phone-w) * 0.06);
+  left: 50%;
+  width: calc(var(--phone-w) * 0.04);
+  height: calc(var(--phone-w) * 0.04);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: theme('colors.gray.950');
+  z-index: 5;
+}
+
+/* ---------- Pantallas (todas apiladas) ---------- */
+.screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: Inter, sans-serif;
+  will-change: transform, opacity;
+}
+.screen p {
+  margin: 0;
+}
+/* Sin motion (reduced): solo se ve la pantalla activa, sin transición */
+.static .screen {
+  opacity: 0;
+  will-change: auto;
+}
+.static .screen[data-active='true'] {
+  opacity: 1;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9em 1.5em 0.4em;
+  font-size: 0.72em;
+  font-weight: 700;
+}
+.statusLight {
+  color: theme('colors.white');
+}
+.purple {
+  background: linear-gradient(165deg, theme('colors.electric') 0%, theme('colors.deeppurple') 70%);
+  color: theme('colors.white');
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 0.8em 1.2em 0.2em;
+  font-size: 0.95em;
+  font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.body2 {
+  flex: 1;
+  padding: 1em 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5em;
+  padding: 1.2em 1.4em 2.4em;
+}
+.kicker {
+  font-size: 0.72em;
+  font-weight: 700;
+  color: theme('colors.gray.500');
+}
+.kickerLight {
+  color: rgb(255 255 255 / 0.85);
+}
+.amount {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+.muted {
+  font-size: 0.7em;
+  color: theme('colors.gray.500');
+}
+.mutedLight {
+  color: rgb(255 255 255 / 0.8);
+}
+.btn {
+  margin-top: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.6em;
+  border-radius: 1.3em;
+  background: theme('colors.deeppurple');
+  color: theme('colors.white');
+  font-weight: 800;
+  font-size: 0.82em;
+}
+.btnWhite {
+  background: theme('colors.white');
+  color: theme('colors.deeppurple');
+  align-self: stretch;
+}
+.card {
+  background: theme('colors.white');
+  border-radius: 1em;
+  padding: 0.4em 1em;
+  box-shadow: 0 0.5em 1.4em -0.7em rgb(75 31 147 / 0.3);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.62em 0;
+  font-size: 0.74em;
+  border-bottom: 1px solid theme('colors.gray.100');
+}
+.row:last-child {
+  border-bottom: 0;
+}
+.row span {
+  color: theme('colors.gray.500');
+}
+
+/* Inicio */
+.hero {
+  padding-bottom: 3.4em;
+  border-radius: 0 0 1.6em 1.6em;
+}
+.hello {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 800;
+  padding: 0.9em 1.05em 0;
+}
+.lift {
+  margin-top: -3.2em;
+  padding: 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+/* Identidad */
+.idCard {
+  aspect-ratio: 1.58;
+  border-radius: 0.8em;
+  border: 0.14em dashed theme('colors.electric');
+  background: theme('colors.white');
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 0.9em;
+}
+.idPhoto {
+  width: 2.6em;
+  height: 3.2em;
+  border-radius: 0.4em;
+  background: theme('colors.gray.200');
+}
+.idLines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.idLines i {
+  height: 0.45em;
+  border-radius: 0.2em;
+  background: theme('colors.gray.200');
+}
+.selfie {
+  align-self: center;
+  width: 5.4em;
+  height: 6.6em;
+  border-radius: 50%;
+  border: 0.18em solid theme('colors.deeppurple');
+  background: theme('colors.white');
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.74em;
+  font-weight: 700;
+}
+.check i {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  background: theme('colors.deeppurple');
+  flex: 0 0 auto;
+}
+
+/* Knox */
+.shield {
+  width: 4em;
+  height: 4em;
+  border-radius: 1.2em;
+  background: rgb(255 255 255 / 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6em;
+}
+.shield svg {
+  width: 55%;
+  height: 55%;
+}
+.bar {
+  align-self: stretch;
+  height: 0.45em;
+  border-radius: 0.25em;
+  background: rgb(255 255 255 / 0.2);
+  overflow: hidden;
+  margin-top: 0.8em;
+}
+.bar i {
+  display: block;
+  width: 72%;
+  height: 100%;
+  background: theme('colors.white');
+  border-radius: inherit;
+}
+.title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+/* Depósito */
+.ok {
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+  background: theme('colors.white');
+  color: theme('colors.deeppurple');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6em;
+}
+.ok svg {
+  width: 55%;
+  height: 55%;
+}
+.receipt {
+  align-self: stretch;
+  margin-top: 1em;
+  background: rgb(255 255 255 / 0.12);
+  border-radius: 1em;
+  padding: 0.3em 1em;
+  text-align: left;
+}
+.receipt .row {
+  border-bottom-color: rgb(255 255 255 / 0.15);
+}
+.receipt .row span {
+  color: rgb(255 255 255 / 0.75);
+}

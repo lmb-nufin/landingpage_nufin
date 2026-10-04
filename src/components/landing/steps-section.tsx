@@ -1,3 +1,5 @@
+import { MOTION_ENABLED } from './motion/config';
+import { StepsPhone } from './motion/steps-phone';
 import { Smartphone, IdCard, Zap, CircleDollarSign, Clock, ArrowRight, ShieldCheck, Heart, UserCheck } from 'lucide-react';
 
 export function StepsSection() {
@@ -41,8 +43,8 @@ export function StepsSection() {
   ];
 
   return (
-    <section id="como-funciona" className="relative overflow-hidden py-8 px-6">
-      <div className="max-w-7xl mx-auto bg-[#F8F7FF] rounded-3xl p-8 lg:p-12 relative overflow-hidden">
+    <section id="como-funciona" className="relative overflow-clip py-8 px-6">
+      <div className="max-w-7xl mx-auto bg-[#F8F7FF] rounded-3xl p-8 lg:p-12 relative overflow-clip">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none rounded-3xl">
             <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-electric/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-[550px] h-[550px] bg-blue-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
@@ -65,7 +67,8 @@ export function StepsSection() {
                 </p>
             </div>
 
-            {/* Steps Container */}
+            {/* Steps Container — con motion: teléfono sticky; sin motion: tarjetas originales */}
+            {MOTION_ENABLED ? <StepsPhone /> : (
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
                 {/* Connecting Line (Desktop) */}
                 <div className="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-gradient-to-r from-gray-200/0 via-gray-300 to-gray-200/0 -z-10"></div>
@@ -95,6 +98,7 @@ export function StepsSection() {
                     </div>
                 ))}
             </div>
+            )}
 
             {/* Premium CTA & Stats */}
             <div id="aplicar" className="mt-16 relative">
