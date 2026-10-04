@@ -32,6 +32,37 @@ export function LandingMotion() {
     const root = document.documentElement;
     const mm = gsap.matchMedia();
 
+    // Deep links (#seccion y redirects heredados como /como_funciona.html → /#como-funciona):
+    // ScrollTrigger mide la página al cargar y puede dejar el scroll en 0 después de que el
+    // navegador ya saltó al ancla. Se re-aplica el salto mientras el usuario no haya movido nada.
+    const hash = decodeURIComponent(window.location.hash.slice(1));
+    let userMoved = false;
+    const markMoved = () => {
+      userMoved = true;
+    };
+    const restoreAnchor = () => {
+      if (!hash || userMoved) return;
+      const el = document.getElementById(hash);
+      if (!el) return;
+      const top = el.getBoundingClientRect().top;
+      if (Math.abs(top) > 2) window.scrollTo({ top: top + window.scrollY, behavior: "instant" });
+    };
+    const moveEvents = ["wheel", "touchstart", "keydown"] as const;
+    let stopTimer: number | undefined;
+    if (hash) {
+      moveEvents.forEach((e) => window.addEventListener(e, markMoved, { once: true, passive: true }));
+      ScrollTrigger.addEventListener("refresh", restoreAnchor);
+      window.addEventListener("load", restoreAnchor);
+      requestAnimationFrame(restoreAnchor);
+      stopTimer = window.setTimeout(() => ScrollTrigger.removeEventListener("refresh", restoreAnchor), 5000);
+    }
+    const cleanupAnchor = () => {
+      moveEvents.forEach((e) => window.removeEventListener(e, markMoved));
+      ScrollTrigger.removeEventListener("refresh", restoreAnchor);
+      window.removeEventListener("load", restoreAnchor);
+      window.clearTimeout(stopTimer);
+    };
+
     mm.add(
       {
         motion: "(prefers-reduced-motion: no-preference)",
@@ -136,7 +167,10 @@ export function LandingMotion() {
       },
     );
 
-    return () => mm.revert();
+    return () => {
+      cleanupAnchor();
+      mm.revert();
+    };
   });
 
   return null;

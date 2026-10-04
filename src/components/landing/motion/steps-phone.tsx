@@ -211,7 +211,7 @@ export function StepsPhone() {
   return (
     <div ref={root} className={cn("relative md:grid md:grid-cols-2 md:gap-12", isStatic && s.static)}>
       {/* Teléfono: sticky arriba en móvil, centrado a la derecha en desktop */}
-      <div className="sticky top-16 z-20 -mx-8 flex justify-center bg-background/95 px-8 pb-4 pt-3 md:order-2 md:mx-0 md:h-[calc(100vh-4rem)] md:items-center md:bg-transparent md:p-0">
+      <div data-nosnippet className="sticky top-16 z-20 -mx-8 flex justify-center bg-background/95 px-8 pb-4 pt-3 md:order-2 md:mx-0 md:h-[calc(100vh-4rem)] md:items-center md:bg-transparent md:p-0">
         <div className={s.phone} role="img" aria-label={`App de Nufin: ${LABELS[active]}`}>
           <div className={s.body}>
             <div className={s.screenArea}>
