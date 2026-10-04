@@ -41,6 +41,19 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/.well-known/traffic-advice',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/trafficadvice+json',
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
