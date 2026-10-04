@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE = 'https://www.nufin.com.mx';
+const BASE = 'https://nufin.com.mx';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

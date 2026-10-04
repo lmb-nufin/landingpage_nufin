@@ -9,6 +9,7 @@ Landing pública de Nufin (préstamos de $500 a $9,000 MXN sin buró, con el cel
 - Deploy: Vercel, conectado a `github.com/lmb-nufin/landingpage_nufin`.
   - Push a `main` = deploy a producción (sitio en vivo).
   - Push a cualquier otra rama = deploy de preview con URL propia; usarlo para revisar antes de mergear a `main`.
+- Dominio canónico: https://nufin.com.mx (sin www). www redirige al apex.
 
 ## Comandos
 - `npm run dev` — servidor local
