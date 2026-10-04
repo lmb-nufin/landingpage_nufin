@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.nufin.com.mx'),
   title: 'Nufin: Tu Prestamo Sin Buro',
   description: 'Préstamos al instante, sin buró. De $500 a $9,000 MXN directos a tu cuenta.',
 };
