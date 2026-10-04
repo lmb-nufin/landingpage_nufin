@@ -236,43 +236,6 @@
   flex: 0 0 auto;
 }
 
-/* Knox */
-.shield {
-  width: 4em;
-  height: 4em;
-  border-radius: 1.2em;
-  background: rgb(255 255 255 / 0.16);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.6em;
-}
-.shield svg {
-  width: 55%;
-  height: 55%;
-}
-.bar {
-  align-self: stretch;
-  height: 0.45em;
-  border-radius: 0.25em;
-  background: rgb(255 255 255 / 0.2);
-  overflow: hidden;
-  margin-top: 0.8em;
-}
-.bar i {
-  display: block;
-  width: 72%;
-  height: 100%;
-  background: theme('colors.white');
-  border-radius: inherit;
-}
-.title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.2em;
-  font-weight: 800;
-  line-height: 1.15;
-}
-
 /* Depósito */
 .ok {
   width: 3.4em;

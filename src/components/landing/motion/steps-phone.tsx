@@ -20,7 +20,6 @@ const STEPS = [
   { title: "Descarga Nufin", desc: "Instala la app desde Google Play en tu celular Samsung." },
   { title: "Identifícate", desc: "Foto de tu INE y una selfie. Sin papeleo ni comprobantes." },
   { title: "Conoce tu oferta", desc: "Ves el monto y tus pagos antes de aceptar." },
-  { title: "Activa la protección", desc: "Tu Samsung queda como garantía con Knox. Si pagas a tiempo, lo usas normal." },
   { title: "Recibe tu dinero", desc: "Transferencia SPEI directa a tu cuenta." },
 ];
 
@@ -91,25 +90,6 @@ function OfferScreen() {
   );
 }
 
-function KnoxScreen() {
-  return (
-    <div className={cn(s.purple, "flex flex-1 flex-col")}>
-      <Status light />
-      <div className={s.center}>
-        <span className={s.shield}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z" />
-            <path d="M8.5 12l2.5 2.5 4.5-5" />
-          </svg>
-        </span>
-        <p className={s.title}>Activando la protección de tu celular</p>
-        <p className={cn(s.muted, s.mutedLight)}>Samsung Knox · tu garantía</p>
-        <span className={s.bar}><i /></span>
-      </div>
-    </div>
-  );
-}
-
 function DepositScreen() {
   return (
     <div className={cn(s.purple, "flex flex-1 flex-col")}>
@@ -132,8 +112,8 @@ function DepositScreen() {
   );
 }
 
-const SCREENS = [HomeScreen, IdentityScreen, OfferScreen, KnoxScreen, DepositScreen];
-const LABELS = ["Inicio de la app", "Validación de identidad", "Oferta de crédito", "Activación de protección Knox", "Depósito por SPEI"];
+const SCREENS = [HomeScreen, IdentityScreen, OfferScreen, DepositScreen];
+const LABELS = ["Inicio de la app", "Validación de identidad", "Oferta de crédito", "Depósito por SPEI"];
 
 export function StepsPhone() {
   const root = useRef<HTMLDivElement>(null);
