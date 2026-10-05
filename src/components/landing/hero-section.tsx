@@ -23,7 +23,7 @@ export function HeroSection() {
             </h1>
             <div data-motion="hero-fade" className="space-y-2">
             <p className="text-sm text-gray-600 font-medium max-w-md mx-auto lg:mx-0 pb-2">
-              De <span className="font-bold text-gray-900">$500</span> a <span className="font-bold text-gray-900">$9,000 MXN</span> directos a tu cuenta desde tu celular.
+              De <span className="font-bold text-gray-900">$500</span> a <span className="font-bold text-gray-900">$7,000 MXN</span> directos a tu cuenta desde tu celular.
             </p>
             <Button size="default" className="font-bold text-base px-8" asChild>
               <a href="https://play.google.com/store/apps/details?id=com.nufin.app&hl=en" target="_blank" rel="noopener noreferrer">

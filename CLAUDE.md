@@ -1,6 +1,6 @@
 # Landing page Nufin
 
-Landing pública de Nufin (préstamos de $500 a $9,000 MXN sin buró, con el celular Samsung como garantía vía Knox). Sitio estático en Next.js, desplegado en Vercel (deploy automático desde GitHub).
+Landing pública de Nufin (préstamos de $500 a $7,000 MXN sin buró, con el celular Samsung como garantía vía Knox). Sitio estático en Next.js, desplegado en Vercel (deploy automático desde GitHub).
 
 ## Stack
 - Next.js 15 (App Router, Turbopack en dev), React 19, TypeScript
@@ -33,7 +33,7 @@ Seguir el sistema de diseño: @docs/DESIGN_SYSTEM.md
 Colores siempre vía variables CSS de `src/app/globals.css` / tokens de Tailwind, nunca hex sueltos. Tipografías: Plus Jakarta Sans (títulos, `font-display`) e Inter (cuerpo).
 
 ## Reglas
-- Todo el copy es en español de México. Montos en MXN con formato `$9,000`.
+- Todo el copy es en español de México. Montos en MXN con formato `$7,000`.
 - Textos legales (aviso de privacidad, términos, ARCO) y montos/condiciones del crédito: no modificarlos sin instrucción explícita; son contenido regulatorio.
 - Razón social en textos legales: Nufin México, S.A.P.I. de C.V.
 - Nunca afirmar supervisión, autorización o respaldo de CONDUSEF, CNBV, PROFECO, SHCP ni bancos (ni en copy, ni con logos). Nufin no está registrada ni supervisada por CONDUSEF.

@@ -6,7 +6,7 @@ import { MOTION_ENABLED } from "@/components/landing/motion/config";
 export const metadata: Metadata = {
   metadataBase: new URL('https://nufin.com.mx'),
   title: 'Nufin: Tu Prestamo Sin Buro',
-  description: 'Préstamos al instante, sin buró. De $500 a $9,000 MXN directos a tu cuenta.',
+  description: 'Préstamos al instante, sin buró. De $500 a $7,000 MXN directos a tu cuenta.',
 };
 
 export default function RootLayout({
