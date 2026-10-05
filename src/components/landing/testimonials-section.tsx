@@ -49,7 +49,7 @@ export function TestimonialsSection() {
             <Star size={14} className="text-amber-500 fill-amber-500" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-electric">Social Proof</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tight mb-4">
+          <h2 data-motion="reveal-title" className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tight mb-4">
             Historias de <span className="text-deeppurple">éxito</span> real
           </h2>
           <p className="text-gray-500 font-medium text-sm max-w-2xl mx-auto">

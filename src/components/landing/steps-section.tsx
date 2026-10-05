@@ -1,3 +1,5 @@
+import { MOTION_ENABLED } from './motion/config';
+import { StepsPhone } from './motion/steps-phone';
 import { Smartphone, IdCard, Zap, CircleDollarSign, Clock, ArrowRight, ShieldCheck, Heart, UserCheck } from 'lucide-react';
 
 export function StepsSection() {
@@ -41,8 +43,8 @@ export function StepsSection() {
   ];
 
   return (
-    <section id="como-funciona" className="relative overflow-hidden py-8 px-6">
-      <div className="max-w-7xl mx-auto bg-[#F8F7FF] rounded-3xl p-8 lg:p-12 relative overflow-hidden">
+    <section id="como-funciona" className="relative overflow-clip py-8 px-6">
+      <div className="max-w-7xl mx-auto bg-[#F8F7FF] rounded-3xl p-8 lg:p-12 relative overflow-clip">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none rounded-3xl">
             <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-electric/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-[550px] h-[550px] bg-blue-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
@@ -55,7 +57,7 @@ export function StepsSection() {
                         <span className="w-2 h-2 rounded-full bg-electric animate-pulse"></span>
                         <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Proceso Digital 100%</span>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tighter leading-[1.1]">
+                    <h3 data-motion="reveal-title" className="text-3xl md:text-4xl font-display font-black text-gray-900 tracking-tighter leading-[1.1]">
                         Dinero en tu cuenta <br/>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-violet-600">a la velocidad de la luz</span>
                     </h3>
@@ -65,7 +67,8 @@ export function StepsSection() {
                 </p>
             </div>
 
-            {/* Steps Container */}
+            {/* Steps Container — con motion: teléfono sticky; sin motion: tarjetas originales */}
+            {MOTION_ENABLED ? <StepsPhone /> : (
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
                 {/* Connecting Line (Desktop) */}
                 <div className="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-gradient-to-r from-gray-200/0 via-gray-300 to-gray-200/0 -z-10"></div>
@@ -95,6 +98,7 @@ export function StepsSection() {
                     </div>
                 ))}
             </div>
+            )}
 
             {/* Premium CTA & Stats */}
             <div id="aplicar" className="mt-16 relative">
@@ -102,6 +106,8 @@ export function StepsSection() {
                     {/* Background Gradients */}
                     <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-electric/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
                     <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
+                    {/* Motion: capa de color que sube con el scroll (negro → morado). Abajo se desvanece para no bajar el contraste de las métricas. */}
+                    <div data-motion="cta-tint" aria-hidden="true" className="absolute inset-0 opacity-0 pointer-events-none bg-gradient-to-b from-deeppurple via-deeppurple/60 to-transparent"></div>
 
                     <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="text-center md:text-left space-y-1">
@@ -112,7 +118,7 @@ export function StepsSection() {
                                 </span>
                                 <span className="text-emerald-400 font-bold text-xs tracking-widest uppercase">Sistema Activo</span>
                             </div>
-                            <h4 className="text-3xl font-display font-black text-white tracking-tight">
+                            <h4 data-motion="reveal-title" className="text-3xl font-display font-black text-white tracking-tight">
                                 Comienza tu solicitud
                             </h4>
                             <p className="text-gray-400 text-base font-medium">Toma menos de 3 minutos.</p>

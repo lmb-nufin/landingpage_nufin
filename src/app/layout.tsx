@@ -1,11 +1,12 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
+import { MOTION_ENABLED } from "@/components/landing/motion/config";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nufin.com.mx'),
   title: 'Nufin: Tu Prestamo Sin Buro',
-  description: 'Préstamos al instante, sin buró. De $500 a $9,000 MXN directos a tu cuenta.',
+  description: 'Préstamos al instante, sin buró. De $500 a $7,000 MXN directos a tu cuenta.',
 };
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es-MX" className="!scroll-smooth">
+    <html lang="es-MX" className={MOTION_ENABLED ? "!scroll-smooth motion-on" : "!scroll-smooth"}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

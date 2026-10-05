@@ -6,6 +6,8 @@ import { Footer } from "@/components/landing/footer";
 import { StepsSection } from "@/components/landing/steps-section";
 import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { CustomerServiceSection } from "@/components/landing/customer-service-section";
+import { LandingMotion } from "@/components/landing/motion/landing-motion";
+import { MOTION_ENABLED } from "@/components/landing/motion/config";
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
         <TestimonialsSection />
       </main>
       <Footer />
+      {MOTION_ENABLED && <LandingMotion />}
     </div>
   );
 }
